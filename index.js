@@ -16,6 +16,7 @@ const wss = new WebSocket.Server({ server });
 let users = {};
 
 const sendTo = (connection, message) => {
+  console.log("######server>message".message);
   connection.send(JSON.stringify(message));
 };
 
